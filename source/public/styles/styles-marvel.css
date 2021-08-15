@@ -1,0 +1,187 @@
+@font-face{font-family: "nonito"; src: url("../../public/fonts/Nunito-Light.ttf");}
+@font-face{font-family: "roboto"; src: url("../../public/fonts/Roboto-Regular.ttf");}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    margin-left: 15%;    
+    width: 250px;
+}
+
+header{
+    font-family: sans-serif;
+    display:flex;
+    justify-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: #F0131E;
+    text-decoration: none;
+}
+
+header .log{
+    text-decoration: none;
+    margin-top: 7px;
+    margin-left: 70%;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    line-height: 37px;
+    border:3px solid #F0131E;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 15px;
+}
+
+header .reg{
+    text-decoration: none;
+    margin-left: 1%;
+    margin-top: 7px;
+    margin-right: 2%;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    line-height: 37px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: #F0131E;
+    color: #FFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+header .log:hover{
+    border:3px solid white;
+    border-radius: 15px;
+    background-color: #e57373;
+    color: #fff;
+}
+
+header .reg:hover{
+    border:3px solid #e57373;
+    border-radius: 15px;
+    background-color: white;
+    color: #b71c1c;
+}
+
+.Container{
+    font-family: sans-serif;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-card{
+    font-family: sans-serif;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;   
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-body{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.nombre-producto, .descripcion-producto{
+    margin: auto;
+    padding-left: 5px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.comprar{
+    margin: auto;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    line-height: 37px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #2ECC71 ;
+    color:white;
+    padding: auto;
+    text-align: center;
+}
+
+.comprar:hover{
+    background-color: #28B463;
+}
+
+footer{
+    background-image: url('../svg/footer-marvel.svg');
+    background-size: cover;
+    font-family: 'nonito';
+    color: white;
+    width: 100%;
+    height: 430px;
+    padding: 180px 0px;
+}
+
+footer .contfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+footer .creditos{
+    text-align: center;
+}
+
+.creditos p{
+    font-size: 17px;
+}
+
+footer .creditos .dueño,
+footer .email .Cont,
+footer .what .numwhat{
+    font-size: 20px;
+    font-family: 'roboto';
+}
+
+footer h4{
+    font-size: 15px;
+    font-family: 'roboto';
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+footer .creditos img{
+    width: 150px;
+    border-radius: 300px;
+    margin-left: 5%;
+}
+
+footer .email .icon-email{
+    width: 15%;
+}
+
+footer .what .icon-what{
+    margin-top: 10px;
+    width: 20%;
+}
+
+

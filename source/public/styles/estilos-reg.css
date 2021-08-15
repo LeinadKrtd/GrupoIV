@@ -1,0 +1,81 @@
+@font-face{font-family: "nonito"; src: url("../../public/fonts/Nunito-Light.ttf");}
+@font-face{font-family: "roboto"; src: url("../../public/fonts/Roboto-Regular.ttf");}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+body{
+    background-image: url('../imgfondos/spiderman-cosplay.jpg');
+    background-size: cover;
+
+}
+
+/* Estilos de resgistro */
+.container-master{
+    width: 100%;
+}
+
+
+.contenedor form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: relative;
+    padding: 15px 15px;
+    margin: auto;
+    margin-top: 1%;
+    width: 30%;
+    height: 700px;
+    background: rgba( 251, 250, 250, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    
+}
+
+form img{
+    width: 25%;
+    margin: auto;
+}
+
+form p{
+    margin: auto;
+}
+
+form label{
+    margin-left: 12%;
+}
+
+
+
+form input[type="text"]{
+    margin: auto;
+    width: 330px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+form input[type="submit"]{
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    color: white;
+    background-color: 	#2ECC71 ;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    color: white;
+    background-color: #27AE60;
+}
+
+/* Estilos de Login */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/styles/estilosform.css">
+    <title>Pedidos</title>
+</head>
+<body> 
+   
+    <div class="contenedor">
+        <p>Comprando productos</p>
+        <form action="">
+
+            <div class="contcode">
+                <label>¿Ya posee un codigo?</label>
+                <input type="text" name="codigo" placeholder="Ingrese su codigo">    
+                <a href="#">Buscar mi usuario</a>
+            </div>
+
+            
+            <div class="contform">
+                
+                <% for(var i = 0; i < selectProduct.length; i++){ %>
+                <img src="<%= selectProduct[i].imagen_producto%>">
+                
+                <label>Nombre del cliente</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre">
+    
+                <label>Apellido del cliente</label>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido">
+    
+                <label>Su producto es: </label>
+                <label class="fecha-e"><%= selectProduct[i].producto%></label>
+                
+                <label>Costo de su producto</label>
+                <label class="fecha-e"><%= parseFloat(selectProduct[i].costo).toFixed(2)%></label>
+    
+                <br>
+                <label>Fecha de entrega</label>
+                <label class="fecha-e">dd/mm/aaaa</label>    
+                <br>
+
+                <% } %>
+            </div>
+            
+                
+            <div class="contsubt">
+                <label>Suba una fotografia de su rostro</label><br><br>
+                <input type="file" name="imagen" accept="image/jpeg, image/png, image/jpg" >    
+            </div>
+            <div class="btn">
+                <a href="#" class="aceptar">Comprar</a>
+                <a href="#" class="cancelar">Cancelar</a>
+                <a href="#" class="agregar">Agregar producto</a>    
+            </div>
+            
+        </form>
+       
+    </div>
+     
+</body>
+</html>

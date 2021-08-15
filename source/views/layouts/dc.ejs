@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/styles/styles-dc.css">
+    <link rel="icon" type="image/jpg" href="../../public/imgfondos/logocrimax.jpg">
+    <title>Crimax - DC</title>
+</head>
+<body>
+    <header>
+        <h1>Crimax</h1>
+        <a href="login.ejs" class="log">Iniciar Sesión</a>
+        <a href="registro.ejs" class="reg">Registrarse</a>
+    </header>
+    <header class="categorias">
+        <a href="marvel.ejs">Marvel</a>
+        <a href="dc.ejs">Dc Comics</a>
+        <a href="anime.ejs">Anime</a>
+    </header>
+
+    <div class="Container">
+
+        <div class="container-card">
+                <% for (var i =0; i < dc.length; i++){%>
+                    <div class="card">
+                        <div class="imagen-producto">
+                            <img src="<%= dc[i].imagen_producto%>">
+                            <div class="card-body">
+                                <h2 class="nombre-producto"><%= dc[i].producto%></h2>
+                                <p class="descripcion-producto"><%= dc[i].descripcion%></p>
+                                <p class="precio"><strong>Costo:</strong><%= parseFloat(dc[i].costo).toFixed(2)%>$</p>
+                            </div>
+                        </div>
+                        
+                        <a href="formulario.ejs?id=<%'dc[i]Id_Categorias';%>" class="comprar">comprar</a>
+                    </div>
+                <%}%>
+        </div>
+
+    </div>
+
+  <br>
+
+
+    <footer>
+        <div class="contfooter">
+            <div class="creditos">
+                <p class="dueño">Industrias Crimax</p>
+                <p>Propietario: Daniel Robayo</p>
+                <p>somos un grupo que se dedica a la creacion de armaduras y accesorios para cosplay </p>
+                <img src="../../public/imgfondos/logocrimax.jpg">
+            
+            </div>
+                
+            <div class="email">
+                <p class="Cont">Contactanos</p>
+                <img class="icon-email" src="../../public/icons/email.svg">
+                <p>Correo Electronico: <a href="crimax2563@hotmail.com" class="correo">crimax2563@hotmail.com</a></p>
+            </div>
+            <div class="what">
+                <p  class="numwhat">Whatsapp</p>
+                <img class="icon-what" src="../../public/icons/whatsapp.svg">
+                <p>Whatsapp: 0979101489</p>   
+            
+            </div>
+            
+        </div>
+        <hr>
+        <h4>&copy;2021 Derechos reservados</h4>                 
+    </footer>
+
+</body>
+</html>
