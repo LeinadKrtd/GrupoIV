@@ -24,6 +24,7 @@
                 
                 <% for(var i = 0; i < selectProduct.length; i++){ %>
                 <img src="<%= selectProduct[i].imagen_producto%>">
+                <input type="text" id="id" name="id" value="<%= selectProduct[i].Id_Categorias%>" hidden>
                 
                 <label>Nombre del cliente</label>
                 <input type="text" name="nombre" placeholder="Ingrese su nombre">
