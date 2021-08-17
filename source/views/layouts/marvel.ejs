@@ -15,6 +15,7 @@
         <a href="registro.ejs" class="reg">Registrarse</a>
     </header>
     <header class="categorias">
+        <a href="http://localhost:8500/">Inicio</a>
         <a href="marvel.ejs">Marvel</a>
         <a href="dc.ejs">Dc Comics</a>
         <a href="anime.ejs">Anime</a>
@@ -34,7 +35,7 @@
                             </div>
                         </div>
                         
-                        <a href="formulario.ejs?id=<%'marvel[i]Id_Categorias';%>" class="comprar">comprar</a>
+                        <a href="formulario.ejs/<%= marvel[i].Id_Categorias%>" class="comprar">comprar</a>
                     </div>
                 <%}%>
         </div>

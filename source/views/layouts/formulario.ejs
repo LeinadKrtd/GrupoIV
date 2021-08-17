@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/styles/estilosform.css">
+    <link rel="icon" type="image/jpg" href="../../public/imgfondos/logocrimax.jpg">
     <title>Pedidos</title>
 </head>
 <body> 
@@ -43,19 +44,21 @@
                 <label class="fecha-e">dd/mm/aaaa</label>    
                 <br>
 
+                <div class="contsubt">
+                    <label>Suba una fotografia de su rostro</label><br><br>
+                    <input type="file" name="imagen" accept="image/jpeg, image/png, image/jpg" >    
+                </div>
+                <div class="btn">
+                    <a href="#" class="aceptar">Comprar</a>
+                    <a href="#" class="cancelar">Cancelar</a>
+                    <a href="#" class="agregar">Agregar producto</a>    
+                </div>
+
                 <% } %>
             </div>
             
                 
-            <div class="contsubt">
-                <label>Suba una fotografia de su rostro</label><br><br>
-                <input type="file" name="imagen" accept="image/jpeg, image/png, image/jpg" >    
-            </div>
-            <div class="btn">
-                <a href="#" class="aceptar">Comprar</a>
-                <a href="#" class="cancelar">Cancelar</a>
-                <a href="#" class="agregar">Agregar producto</a>    
-            </div>
+            
             
         </form>
        

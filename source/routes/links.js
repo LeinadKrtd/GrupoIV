@@ -63,4 +63,20 @@ module.exports = app => {
         res.render('registro');
     });
 
+    app.post('/registro.ejs', (req, res) => {
+        const connection = database();
+        const cliente = {
+            cedula : req.body.cedula,
+            nombre : req.body.nombre,
+            apellido : req.body.apellido,
+            direccion : req.body.direccion,
+            celular : req.body.celular,
+            correo_electronico : req.body.correo_electronico
+        }
+        connection.query(`INSERT INTO clientes SET '${cliente}'`, (err, result) => {
+            console.log(result);
+        });
+
+    });
+
 }
