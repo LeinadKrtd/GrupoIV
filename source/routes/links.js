@@ -7,7 +7,7 @@ module.exports = app => {
     const connection = database(); 
     app.get('/', (req, res) => {
         connection.query(`SELECT Id_Categorias, imagen_producto, producto, descripcion, costo FROM categorias`, (err, result) => {
-            // console.log(result);
+            console.log(result);
             res.render('main', {
                 catalogo: result
             });
